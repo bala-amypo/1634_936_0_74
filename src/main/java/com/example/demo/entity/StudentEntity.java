@@ -16,7 +16,7 @@ private String name;
 private String email;
 private String password;
 private Date created;
-public Date getCreated {
+public Date getCreated (){
     return created;
 }
 public void setCreated(Date created) {

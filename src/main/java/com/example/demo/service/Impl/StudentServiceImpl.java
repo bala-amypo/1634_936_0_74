@@ -1,6 +1,6 @@
 package com.example.demo.sevice.Impl;
 
-import.org.springframework.beans
+import.org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.demo.service.StudentEntity;
@@ -15,5 +15,7 @@ public class StudentServiceImpl implements StudentService{
 //deleteById();
 //existById();
 
-  public StudentEntity postData(StudentEntity.stu)
+  public StudentEntity postData(StudentEntity.stu){
+    return student.save(stu);
+  }
 }

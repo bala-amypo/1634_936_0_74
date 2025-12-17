@@ -8,4 +8,6 @@ import com.example.demo.service.StudentService;
 @RestController
 public class StudentController {
 @Autowired StudentService ser;
+
+@PostMapping("/post")
 }

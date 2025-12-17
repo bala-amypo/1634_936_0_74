@@ -1,9 +1,16 @@
 package com.example.demo.entity;
-//@Entity
-public class StudentEntity{
 
-private String name;
+
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.GeneratedValue;
+@Entity
+public class StudentEntity{
+@Id
+@GeneratedValue(strategy=GenerationType.IDENTITY)
 private Integer id;
+private String name;
 private String email;
 private String password;
 private Date created;
@@ -43,9 +50,8 @@ public SampleEntity(Integer id, String name, String email, String password, Date
     this.name=name;
     this.email=email;
     this.password=password;
-    this.idcreated=created;
-
-
+    this.created=created;
 }
+public SampleEntity(){}
 
 

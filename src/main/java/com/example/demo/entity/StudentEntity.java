@@ -17,7 +17,7 @@ private String email;
 private String password;
 private Date created;
 public Date getCreated (){
-    return Created;
+    return created;
 }
 public void setCreated(Date created) {
     this.created=created;
@@ -47,7 +47,7 @@ public void setPassword(String password){
     this.password=password;
 }
 
-public StudentEntity(Integer id, String name, String email, String password, Date created) {
+public StudentEntity(Integer Id, String name, String email, String password, Date created) {
     this.id=id;
     this.name=name;
     this.email=email;

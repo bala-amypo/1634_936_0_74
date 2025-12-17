@@ -3,8 +3,9 @@ package com.example.demo.entity;
 public class StudentEntity{
 
 private String name;
-private Integer name;
-private String name;
-private String name;
+private Integer id;
+private String email;
+private String password;
+private Date created;
 }
 

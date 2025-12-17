@@ -2,12 +2,12 @@ package com.example.demo.entity;
 
 
 
-import jakarta.persistence.entity;
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GeneratedType;
 import jakarta.persistence.Id;
 
-@entity
+@Entity
 public class StudentEntity{
 @Id
 @GeneratedValue(strategy=GenerationType.IDENTITY)
@@ -47,12 +47,13 @@ public void setPassword(String password){
     this.password=password;
 }
 
-public SampleEntity(Integer id, String name, String email, String password, Date created) {
+public StudentEntity(Integer id, String name, String email, String password, Date created) {
     this.id=id;
     this.name=name;
     this.email=email;
     this.password=password;
     this.created=created;
+}
 }
 
 

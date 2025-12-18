@@ -4,6 +4,7 @@ import org.springframework.stereotype.Service;
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepo;
 import com.example.demo.service.StudentService;
+
 import java.util.List;
 @Service
 public class StudentServiceImpl implements StudentService {
@@ -13,7 +14,6 @@ public class StudentServiceImpl implements StudentService {
     //findById()
     //deleteById();
     //existByid();
-    @Override
         public StudentEntity postData(StudentEntity stu){
             return student.save(stu);
         }   

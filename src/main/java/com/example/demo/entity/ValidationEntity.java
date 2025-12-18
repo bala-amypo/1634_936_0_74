@@ -35,10 +35,10 @@ public void setId(Integer id){
     this.id=id;
 }
 public String getusername(){
-    return name;
+    return username;
 }
 public void setusername(String username){
-    this.name=name;
+    this.username=name;
 }
 public String getEmail(){
     return email;
@@ -55,8 +55,8 @@ public void setPassword(String Password){
 public String getage(){
     return age;
 }
-public void setage(String Password){
-    this.password=password;
+public void setage(Integer age){
+    this.age=age;
 }
 public ValidationEntity(Long id;
           @NotNul @Size(min = 2, max = 10, message = "must be 2 to 10 character") String username;

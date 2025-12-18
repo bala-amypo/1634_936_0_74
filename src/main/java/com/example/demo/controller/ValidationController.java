@@ -21,7 +21,7 @@ public class ValidationController{
 
 
     @PostMapping("/post2")
-    public ValidationEntity sendData(@Valid @RequestBody ValidationEntity stu){
+    public Validation sendData(@Valid @RequestBody ValidationEntity stu){
         return service.postData(stu);
     }
     

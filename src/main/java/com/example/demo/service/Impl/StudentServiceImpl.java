@@ -18,6 +18,6 @@ public class StudentServiceImpl implements StudentService {
     @Override
         public StudentEntity postData(StudentEntity stu){
             return student.save(stu);
-
-        }       
+        }   
+        @   
 }

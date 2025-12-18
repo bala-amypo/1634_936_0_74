@@ -13,11 +13,11 @@ public class ValidationServiceImpl implements ValidationService {
     //findById()
     //deleteById();
     //existByid();
-        public StudentEntity postData(StudentEntity stu){
+        public ValidationEntity postData(ValidationEntity stu){
             return student.save(stu);
         }   
         @Override 
-        public List<StudentEntity>getAllData(){
+        public List<ValidationEntity>getAllData(){
             return student.findAll();
         }   
         @Override
@@ -26,11 +26,11 @@ public class ValidationServiceImpl implements ValidationService {
                     return "Deleted Successfully";
         }
         @Override
-        public StudentEntity getData(int id){
+        public ValidationEntity getData(int id){
             return student.findById(id).orElse(null);
         }
         @Override
-        public StudentEntity updateData(int id,StudentEntity entity){
+        public ValidationEntity updateData(int id,ValidationEntity entity){
             if (student.existsById(id)){
                 entity.setId(id);
                  return student.save(entity);

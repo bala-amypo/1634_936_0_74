@@ -30,37 +30,6 @@ public class ValidationEntity{
 
 
 
-public Long getId(){
-    return id;
-}
-
-public void setId(Long id){
-    this.id=id;
-}
-public String getusername(){
-    return username;
-}
-public void setusername(String username){
-    this.username=username;
-}
-public String getEmail(){
-    return email;
-}
-public void setEmail(String email){
-    this.email=email;
-}
-public String getPassword(){
-    return password;
-}
-public void setPassword(String Password){
-    this.password=password;
-}
-public int getage(){
-    return age;
-}
-public void setage(int age){
-    this.age=age;
-}
 public ValidationEntity(Long id,
           @NotNull @Size(min = 2, max = 10, message = "must be 2 to 10 character") String username,
           @Email(message = "Email is not valid") String email,

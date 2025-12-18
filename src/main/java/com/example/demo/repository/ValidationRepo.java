@@ -5,6 +5,6 @@ import org.springframework.stereotype.Repository;
 import com.example.demo.entity.ValidationEntity;
 
 @Repository
-public interface StudentRepo extends JpaRepository<ValidationEntity,Integer>{
+public interface ValidationRepo extends JpaRepository<ValidationEntity,Integer>{
 
 }

@@ -1,10 +1,10 @@
 package com.example.demo.service;
-
-import com.example.demo.entity.StudentEntity;
 import java.util.List;
+import com.example.demo.entity.StudentEntity;
 public interface StudentService{
     
     StudentEntity postData(StudentEntity stu);
     List<StudentEntity>getAllData();
     String DeleteData(int id);
+    StudentEntity getData(int id);
 }

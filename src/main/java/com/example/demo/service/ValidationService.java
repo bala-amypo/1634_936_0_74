@@ -1,11 +1,11 @@
 package com.example.demo.service;
 import java.util.List;
-import com.example.demo.entity.StudentEntity;
+import com.example.demo.entity.ValidationEntity;
 public interface ValidationService{
     
-    StudentEntity postData(StudentEntity stu);
-    List<StudentEntity>getAllData();
+    ValidationEntity postData(ValidationEntity stu);
+    List<ValidationEntity>getAllData();
     String DeleteData(int id);
-    StudentEntity getData(int id);
-    StudentEntity updateData(int id,StudentEntity entity);
+    ValidationEntity getData(int id);
+    ValidationEntity updateData(int id,ValidationEntity entity);
 }

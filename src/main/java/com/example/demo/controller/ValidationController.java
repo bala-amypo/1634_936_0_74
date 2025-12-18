@@ -9,22 +9,22 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PathVariable;
-import com.example.demo.entity.ValidationEController;
-import com.example.demo.service.StudentService;
+import com.example.demo.entity.ValidationController;
+import com.example.demo.service.ValidationService;
 import java.util.List;
 @RestController
 public class ValidationController{
 
-    @Autowired StudentService service;
+    @Autowired ValidationService service;
 
 
 
     @PostMapping("/post")
-    public ValidationController sendData(@RequestBody ValidationEController stu){
+    public ValidationController sendData(@RequestBody ValidationController stu){
         return service.postData(stu);
     }
     @GetMapping("/get")
-    public List<ValidationEController> getval(){
+    public List<ValidationController> getval(){
         return service.getAllData();
     }
      @DeleteMapping("/delete/{id}")
@@ -32,11 +32,11 @@ public class ValidationController{
         return service.DeleteData(id);
      }
      @GetMapping("/getid/{id}")
-     public ValidationEController getdataid(@PathVariable int id){
+     public ValidationController getdataid(@PathVariable int id){
         return service.getData(id);
      }
      @PutMapping("/put/{id}")
-     public ValidationEController putval(@PathVariable int id,@RequestBody ValidationEController entity){
+     public ValidationController putval(@PathVariable int id,@RequestBody ValidationController entity){
            return service.updateData(id,entity);
      }
         

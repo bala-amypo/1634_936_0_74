@@ -41,7 +41,7 @@ public String getusername(){
     return username;
 }
 public void setusername(String username){
-    this.username=name;
+    this.username=username;
 }
 public String getEmail(){
     return email;
@@ -55,17 +55,17 @@ public String getPassword(){
 public void setPassword(String Password){
     this.password=password;
 }
-public String getage(){
+public int getage(){
     return age;
 }
-public void setage(Integer age){
+public void setage(int age){
     this.age=age;
 }
 public ValidationEntity(Long id,
           @NotNull @Size(min = 2, max = 10, message = "must be 2 to 10 character") String username,
           @Email(message = "Email is not valid") String email,
           @Size(min = 2 , max = 10, message = "must be 2 to 10 character") @NotNull(message = "Password is mandatory") String password,
-          @Max(30) @Positive(message = "Age must be a positive number") Integer age) {
+          @Max(30) @Positive(message = "Age must be a positive number") int age) {
     this.id=id;
     this.username=username;
     this.email=email;

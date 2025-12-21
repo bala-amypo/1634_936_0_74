@@ -12,7 +12,7 @@ import java.util.Map;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(ResourceNotFoundException.class)
+    @ExceptionHandler(ResourceNotFoundException)
     public ResponseEntity<Map<String, Object>> handleResourceNotFoundException(
             ResourceNotFoundException ex) {
 
